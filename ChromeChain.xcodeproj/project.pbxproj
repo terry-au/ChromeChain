@@ -12,9 +12,9 @@
 		33D9D3811E7FD09A002239DC /* libChromeChain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D9D3761E7FD065002239DC /* libChromeChain.a */; };
 		D5AF6134401283868B0395BB /* LoginCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF6CC7763A4FF6269DFE0E /* LoginCredential.m */; };
 		D5AF6874D5EA552B46C223B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF687DB23078E4B59279EA /* main.m */; };
-		D5AF6965A44293A2CF7816E3 /* ChromeLoginStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF68082EEE7F8156910D77 /* ChromeLoginStore.m */; };
+		D5AF6965A44293A2CF7816E3 /* LoginStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF68082EEE7F8156910D77 /* LoginStore.m */; };
 		D5AF6A95024EF90620C9CCA5 /* LoginCredential.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AF60A5B51CA4EA707E7977 /* LoginCredential.h */; };
-		D5AF6C7350BC07E33EE4E164 /* ChromeLoginStore.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AF6CDCC839791BB0A4DCD4 /* ChromeLoginStore.h */; };
+		D5AF6C7350BC07E33EE4E164 /* LoginStore.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AF6CDCC839791BB0A4DCD4 /* LoginStore.h */; };
 		FE1D531D238705F409BA05AE /* libPods-ChromeChain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E19720A943CA0EA22F1A7B7 /* libPods-ChromeChain.a */; };
 /* End PBXBuildFile section */
 
@@ -47,11 +47,11 @@
 		5E19720A943CA0EA22F1A7B7 /* libPods-ChromeChain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChromeChain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9937E7920BA221571AC2973D /* Pods-ChromeChain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeChain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeChain/Pods-ChromeChain.debug.xcconfig"; sourceTree = "<group>"; };
 		D5AF60A5B51CA4EA707E7977 /* LoginCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginCredential.h; sourceTree = "<group>"; };
-		D5AF68082EEE7F8156910D77 /* ChromeLoginStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromeLoginStore.m; sourceTree = "<group>"; };
+		D5AF68082EEE7F8156910D77 /* LoginStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginStore.m; sourceTree = "<group>"; };
 		D5AF687DB23078E4B59279EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D5AF6A598DC26AD658D1628A /* ChromeChainConsole */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChromeChainConsole; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5AF6CC7763A4FF6269DFE0E /* LoginCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginCredential.m; sourceTree = "<group>"; };
-		D5AF6CDCC839791BB0A4DCD4 /* ChromeLoginStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromeLoginStore.h; sourceTree = "<group>"; };
+		D5AF6CDCC839791BB0A4DCD4 /* LoginStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginStore.h; sourceTree = "<group>"; };
 		D746A1382FA947584167FA3D /* Pods-ChromeChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeChain/Pods-ChromeChain.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,8 +80,8 @@
 			children = (
 				33D9D3781E7FD065002239DC /* ChromeChain.h */,
 				33D9D37A1E7FD065002239DC /* ChromeChain.m */,
-				D5AF68082EEE7F8156910D77 /* ChromeLoginStore.m */,
-				D5AF6CDCC839791BB0A4DCD4 /* ChromeLoginStore.h */,
+				D5AF68082EEE7F8156910D77 /* LoginStore.m */,
+				D5AF6CDCC839791BB0A4DCD4 /* LoginStore.h */,
 				D5AF6CC7763A4FF6269DFE0E /* LoginCredential.m */,
 				D5AF60A5B51CA4EA707E7977 /* LoginCredential.h */,
 			);
@@ -142,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33D9D3791E7FD065002239DC /* ChromeChain.h in Headers */,
-				D5AF6C7350BC07E33EE4E164 /* ChromeLoginStore.h in Headers */,
+				D5AF6C7350BC07E33EE4E164 /* LoginStore.h in Headers */,
 				D5AF6A95024EF90620C9CCA5 /* LoginCredential.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33D9D37B1E7FD065002239DC /* ChromeChain.m in Sources */,
-				D5AF6965A44293A2CF7816E3 /* ChromeLoginStore.m in Sources */,
+				D5AF6965A44293A2CF7816E3 /* LoginStore.m in Sources */,
 				D5AF6134401283868B0395BB /* LoginCredential.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface ChromeLoginStore : NSObject
+@interface LoginStore : NSObject
 
 @property (nonatomic, strong) NSString *path;
 

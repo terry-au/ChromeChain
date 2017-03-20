@@ -3,7 +3,7 @@
 // Copyright (c) 2017 terry1994. All rights reserved.
 //
 
-#import "ChromeLoginStore.h"
+#import "LoginStore.h"
 #import "FMDB/FMDB.h"
 #import "LoginCredential.h"
 
@@ -12,7 +12,7 @@ const static NSString *const kActionURL = @"action_url";
 const static NSString *const kUsernameValue = @"username_value";
 const static NSString *const kPasswordValue = @"password_value";
 
-@implementation ChromeLoginStore {
+@implementation LoginStore {
     FMDatabase *_database;
     NSArray<LoginCredential *> *_loginCredentials;
 }
