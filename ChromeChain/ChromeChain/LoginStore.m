@@ -53,4 +53,8 @@ const static NSString *const kPasswordValue = @"password_value";
     return [_database close];
 }
 
+- (NSArray<LoginCredential *> *)credentials {
+    return _loginCredentials;
+}
+
 @end

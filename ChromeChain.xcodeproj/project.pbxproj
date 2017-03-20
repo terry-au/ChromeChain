@@ -85,7 +85,8 @@
 				D5AF6CC7763A4FF6269DFE0E /* LoginCredential.m */,
 				D5AF60A5B51CA4EA707E7977 /* LoginCredential.h */,
 			);
-			path = ChromeChain;
+			name = ChromeChain;
+			path = ChromeChain/ChromeChain;
 			sourceTree = "<group>";
 		};
 		8814ECE3339A4BCC6A9B7FA0 /* Frameworks */ = {
@@ -353,6 +354,10 @@
 		D5AF6745A4BEC7E35046E54B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TEST_FILES_PATH=$(SRCROOT)/$(PROJECT_NAME)/$(TARGET_NAME)/test_files",
+					"DEBUG=1",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -400,6 +405,7 @@
 		D5AF6B9A3AB6BB19EEA4A778 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = "TEST_FILES_PATH=$(SRCROOT)/$(PROJECT_NAME)/$(TARGET_NAME)/test_files";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

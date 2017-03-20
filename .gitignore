@@ -61,3 +61,6 @@ iOSInjectionProject/
 
 #AppCode
 .idea/
+
+#Test Login Credentials
+ChromeChain/ChromeChainConsole/test_files/

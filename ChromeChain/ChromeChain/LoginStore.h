@@ -4,11 +4,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "LoginCredential.h"
 
 @interface LoginStore : NSObject
 
 @property (nonatomic, strong) NSString *path;
+@property (nonatomic, copy, readonly) NSArray<LoginCredential *> *credentials;
 
 - (instancetype)initWithPath:(NSString *)path;
 
