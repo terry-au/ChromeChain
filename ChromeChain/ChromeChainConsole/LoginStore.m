@@ -7,10 +7,10 @@
 #import "FMDB/FMDB.h"
 #import "LoginCredential.h"
 
-const static NSString *const kTableName = @"logins";
-const static NSString *const kActionURL = @"action_url";
-const static NSString *const kUsernameValue = @"username_value";
-const static NSString *const kPasswordValue = @"password_value";
+static NSString *const kTableName = @"logins";
+static NSString *const kActionURL = @"action_url";
+static NSString *const kUsernameValue = @"username_value";
+static NSString *const kPasswordValue = @"password_value";
 
 @implementation LoginStore {
     FMDatabase *_database;
@@ -41,7 +41,7 @@ const static NSString *const kPasswordValue = @"password_value";
     if (resultSet.next){
         NSString *actionURL = [resultSet stringForColumn:kActionURL];
         NSString *username = [resultSet stringForColumn:kUsernameValue];
-        NSString *encPassword = [resultSet stringForColumn:kPasswordValue];
+        NSData *encPassword = [resultSet dataForColumn:kPasswordValue];
 
         LoginCredential *loginCredential = [LoginCredential credentialWithActionURL:actionURL
                                                                            username:username

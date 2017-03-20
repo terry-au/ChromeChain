@@ -13,6 +13,8 @@
 
 - (instancetype)initWithPath:(NSString *)path;
 
+- (BOOL)readData;
+
 + (instancetype)storeWithPath:(NSString *)path;
 
 @end

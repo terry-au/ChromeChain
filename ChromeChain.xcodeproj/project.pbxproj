@@ -7,26 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33D9D3791E7FD065002239DC /* ChromeChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D9D3781E7FD065002239DC /* ChromeChain.h */; };
-		33D9D37B1E7FD065002239DC /* ChromeChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D9D37A1E7FD065002239DC /* ChromeChain.m */; };
-		33D9D3811E7FD09A002239DC /* libChromeChain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D9D3761E7FD065002239DC /* libChromeChain.a */; };
-		D5AF6134401283868B0395BB /* LoginCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF6CC7763A4FF6269DFE0E /* LoginCredential.m */; };
+		333E30411E7FF07B00C834CB /* LoginCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 333E303E1E7FF07B00C834CB /* LoginCredential.m */; };
+		333E30421E7FF07B00C834CB /* LoginStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 333E30401E7FF07B00C834CB /* LoginStore.m */; };
+		C5E1D9D9737FDA7C74394ADB /* libPods-ChromeChainConsole.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC619E92FE21CDF3D19CD1C /* libPods-ChromeChainConsole.a */; };
 		D5AF6874D5EA552B46C223B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF687DB23078E4B59279EA /* main.m */; };
-		D5AF6965A44293A2CF7816E3 /* LoginStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF68082EEE7F8156910D77 /* LoginStore.m */; };
-		D5AF6A95024EF90620C9CCA5 /* LoginCredential.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AF60A5B51CA4EA707E7977 /* LoginCredential.h */; };
-		D5AF6C7350BC07E33EE4E164 /* LoginStore.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AF6CDCC839791BB0A4DCD4 /* LoginStore.h */; };
-		FE1D531D238705F409BA05AE /* libPods-ChromeChain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E19720A943CA0EA22F1A7B7 /* libPods-ChromeChain.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		33D9D37F1E7FD095002239DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D5AF60DB0CA4547E0400A7C9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 33D9D3751E7FD065002239DC;
-			remoteInfo = ChromeChain;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D5AF6F29A9604A2416630DD4 /* CopyFiles */ = {
@@ -41,65 +26,51 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		33D9D3761E7FD065002239DC /* libChromeChain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libChromeChain.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		33D9D3781E7FD065002239DC /* ChromeChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChromeChain.h; sourceTree = "<group>"; };
-		33D9D37A1E7FD065002239DC /* ChromeChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromeChain.m; sourceTree = "<group>"; };
-		5E19720A943CA0EA22F1A7B7 /* libPods-ChromeChain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChromeChain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9937E7920BA221571AC2973D /* Pods-ChromeChain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeChain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeChain/Pods-ChromeChain.debug.xcconfig"; sourceTree = "<group>"; };
-		D5AF60A5B51CA4EA707E7977 /* LoginCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginCredential.h; sourceTree = "<group>"; };
-		D5AF68082EEE7F8156910D77 /* LoginStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginStore.m; sourceTree = "<group>"; };
+		333E30261E7FECA900C834CB /* libFMDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMDB.a; path = "../../../Library/Developer/Xcode/DerivedData/ChromeChain-gvsudhphjgqcphanbbxgrmdzxgtk/Build/Products/Debug/FMDB/libFMDB.a"; sourceTree = "<group>"; };
+		333E303D1E7FF07B00C834CB /* LoginCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginCredential.h; sourceTree = "<group>"; };
+		333E303E1E7FF07B00C834CB /* LoginCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginCredential.m; sourceTree = "<group>"; };
+		333E303F1E7FF07B00C834CB /* LoginStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginStore.h; sourceTree = "<group>"; };
+		333E30401E7FF07B00C834CB /* LoginStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginStore.m; sourceTree = "<group>"; };
+		48AB2EE598BD65E37EDB039F /* Pods-ChromeChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeChain/Pods-ChromeChain.release.xcconfig"; sourceTree = "<group>"; };
+		664B0FCB1F1CBAE79ACD2A30 /* Pods-ChromeChainConsole.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeChainConsole.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeChainConsole/Pods-ChromeChainConsole.debug.xcconfig"; sourceTree = "<group>"; };
+		695FFB85A1509D77943E1FFF /* libPods-ChromeChain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChromeChain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8570C1BC247B956575E1575B /* Pods-ChromeChain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeChain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeChain/Pods-ChromeChain.debug.xcconfig"; sourceTree = "<group>"; };
+		B14FE5F50AF5F447D4C802DB /* Pods-ChromeChainConsole.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeChainConsole.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeChainConsole/Pods-ChromeChainConsole.release.xcconfig"; sourceTree = "<group>"; };
+		CCC619E92FE21CDF3D19CD1C /* libPods-ChromeChainConsole.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChromeChainConsole.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5AF687DB23078E4B59279EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D5AF6A598DC26AD658D1628A /* ChromeChainConsole */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChromeChainConsole; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5AF6CC7763A4FF6269DFE0E /* LoginCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginCredential.m; sourceTree = "<group>"; };
-		D5AF6CDCC839791BB0A4DCD4 /* LoginStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginStore.h; sourceTree = "<group>"; };
-		D746A1382FA947584167FA3D /* Pods-ChromeChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeChain/Pods-ChromeChain.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		33D9D3731E7FD065002239DC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FE1D531D238705F409BA05AE /* libPods-ChromeChain.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D5AF68C0CCE4B4BDFD0C7ABB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33D9D3811E7FD09A002239DC /* libChromeChain.a in Frameworks */,
+				C5E1D9D9737FDA7C74394ADB /* libPods-ChromeChainConsole.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		33D9D3771E7FD065002239DC /* ChromeChain */ = {
+		84D1A5814773C04752A87664 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				33D9D3781E7FD065002239DC /* ChromeChain.h */,
-				33D9D37A1E7FD065002239DC /* ChromeChain.m */,
-				D5AF68082EEE7F8156910D77 /* LoginStore.m */,
-				D5AF6CDCC839791BB0A4DCD4 /* LoginStore.h */,
-				D5AF6CC7763A4FF6269DFE0E /* LoginCredential.m */,
-				D5AF60A5B51CA4EA707E7977 /* LoginCredential.h */,
+				8570C1BC247B956575E1575B /* Pods-ChromeChain.debug.xcconfig */,
+				48AB2EE598BD65E37EDB039F /* Pods-ChromeChain.release.xcconfig */,
+				664B0FCB1F1CBAE79ACD2A30 /* Pods-ChromeChainConsole.debug.xcconfig */,
+				B14FE5F50AF5F447D4C802DB /* Pods-ChromeChainConsole.release.xcconfig */,
 			);
-			name = ChromeChain;
-			path = ChromeChain/ChromeChain;
-			sourceTree = "<group>";
-		};
-		8814ECE3339A4BCC6A9B7FA0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E19720A943CA0EA22F1A7B7 /* libPods-ChromeChain.a */,
-			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		D5AF6239C3527E8FF9D0B08B /* ChromeChainConsole */ = {
 			isa = PBXGroup;
 			children = (
+				333E303D1E7FF07B00C834CB /* LoginCredential.h */,
+				333E303E1E7FF07B00C834CB /* LoginCredential.m */,
+				333E303F1E7FF07B00C834CB /* LoginStore.h */,
+				333E30401E7FF07B00C834CB /* LoginStore.m */,
 				D5AF687DB23078E4B59279EA /* main.m */,
 			);
 			name = ChromeChainConsole;
@@ -109,11 +80,10 @@
 		D5AF62EA4EF6792854193ED4 = {
 			isa = PBXGroup;
 			children = (
-				33D9D3771E7FD065002239DC /* ChromeChain */,
 				D5AF6239C3527E8FF9D0B08B /* ChromeChainConsole */,
 				D5AF6618A8321CB8154728A0 /* Products */,
-				E6BD829389E40D561464253D /* Pods */,
-				8814ECE3339A4BCC6A9B7FA0 /* Frameworks */,
+				E7F835AFBED83C30F30BDE25 /* Frameworks */,
+				84D1A5814773C04752A87664 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,67 +91,36 @@
 			isa = PBXGroup;
 			children = (
 				D5AF6A598DC26AD658D1628A /* ChromeChainConsole */,
-				33D9D3761E7FD065002239DC /* libChromeChain.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E6BD829389E40D561464253D /* Pods */ = {
+		E7F835AFBED83C30F30BDE25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9937E7920BA221571AC2973D /* Pods-ChromeChain.debug.xcconfig */,
-				D746A1382FA947584167FA3D /* Pods-ChromeChain.release.xcconfig */,
+				333E30261E7FECA900C834CB /* libFMDB.a */,
+				695FFB85A1509D77943E1FFF /* libPods-ChromeChain.a */,
+				CCC619E92FE21CDF3D19CD1C /* libPods-ChromeChainConsole.a */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		33D9D3741E7FD065002239DC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				33D9D3791E7FD065002239DC /* ChromeChain.h in Headers */,
-				D5AF6C7350BC07E33EE4E164 /* LoginStore.h in Headers */,
-				D5AF6A95024EF90620C9CCA5 /* LoginCredential.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		33D9D3751E7FD065002239DC /* ChromeChain */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 33D9D37C1E7FD065002239DC /* Build configuration list for PBXNativeTarget "ChromeChain" */;
-			buildPhases = (
-				5B93E8FEB265EFBFF1325A8D /* [CP] Check Pods Manifest.lock */,
-				33D9D3721E7FD065002239DC /* Sources */,
-				33D9D3731E7FD065002239DC /* Frameworks */,
-				33D9D3741E7FD065002239DC /* Headers */,
-				7D5D10CA25568BCDEB377BAB /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ChromeChain;
-			productName = ChromeChain;
-			productReference = 33D9D3761E7FD065002239DC /* libChromeChain.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		D5AF633F157D13E528ED122A /* ChromeChainConsole */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5AF606AC7AF66244AB81D78 /* Build configuration list for PBXNativeTarget "ChromeChainConsole" */;
 			buildPhases = (
+				14272DD9C968B28738635909 /* [CP] Check Pods Manifest.lock */,
 				D5AF659FEC12D1E3F8207197 /* Sources */,
 				D5AF68C0CCE4B4BDFD0C7ABB /* Frameworks */,
 				D5AF6F29A9604A2416630DD4 /* CopyFiles */,
+				DBE87AA6BD37904E110CB6CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				33D9D3801E7FD095002239DC /* PBXTargetDependency */,
 			);
 			name = ChromeChainConsole;
 			productName = ChromeChain;
@@ -195,13 +134,6 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = terry1994;
-				TargetAttributes = {
-					33D9D3751E7FD065002239DC = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = AAQ453XLKM;
-						ProvisioningStyle = Automatic;
-					};
-				};
 			};
 			buildConfigurationList = D5AF69966A7D39D5951EA26A /* Build configuration list for PBXProject "ChromeChain" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -216,13 +148,12 @@
 			projectRoot = "";
 			targets = (
 				D5AF633F157D13E528ED122A /* ChromeChainConsole */,
-				33D9D3751E7FD065002239DC /* ChromeChain */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5B93E8FEB265EFBFF1325A8D /* [CP] Check Pods Manifest.lock */ = {
+		14272DD9C968B28738635909 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -237,7 +168,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		7D5D10CA25568BCDEB377BAB /* [CP] Copy Pods Resources */ = {
+		DBE87AA6BD37904E110CB6CC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,61 +180,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChromeChain/Pods-ChromeChain-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChromeChainConsole/Pods-ChromeChainConsole-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		33D9D3721E7FD065002239DC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				33D9D37B1E7FD065002239DC /* ChromeChain.m in Sources */,
-				D5AF6965A44293A2CF7816E3 /* LoginStore.m in Sources */,
-				D5AF6134401283868B0395BB /* LoginCredential.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D5AF659FEC12D1E3F8207197 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333E30411E7FF07B00C834CB /* LoginCredential.m in Sources */,
+				333E30421E7FF07B00C834CB /* LoginStore.m in Sources */,
 				D5AF6874D5EA552B46C223B0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		33D9D3801E7FD095002239DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 33D9D3751E7FD065002239DC /* ChromeChain */;
-			targetProxy = 33D9D37F1E7FD095002239DC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		33D9D37D1E7FD065002239DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9937E7920BA221571AC2973D /* Pods-ChromeChain.debug.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = AAQ453XLKM;
-				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		33D9D37E1E7FD065002239DC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D746A1382FA947584167FA3D /* Pods-ChromeChain.release.xcconfig */;
-			buildSettings = {
-				DEVELOPMENT_TEAM = AAQ453XLKM;
-				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		D5AF61997A030E6CD1B2F351 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -353,6 +248,7 @@
 		};
 		D5AF6745A4BEC7E35046E54B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 664B0FCB1F1CBAE79ACD2A30 /* Pods-ChromeChainConsole.debug.xcconfig */;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"TEST_FILES_PATH=$(SRCROOT)/$(PROJECT_NAME)/$(TARGET_NAME)/test_files",
@@ -404,6 +300,7 @@
 		};
 		D5AF6B9A3AB6BB19EEA4A778 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B14FE5F50AF5F447D4C802DB /* Pods-ChromeChainConsole.release.xcconfig */;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = "TEST_FILES_PATH=$(SRCROOT)/$(PROJECT_NAME)/$(TARGET_NAME)/test_files";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,15 +310,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		33D9D37C1E7FD065002239DC /* Build configuration list for PBXNativeTarget "ChromeChain" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				33D9D37D1E7FD065002239DC /* Debug */,
-				33D9D37E1E7FD065002239DC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D5AF606AC7AF66244AB81D78 /* Build configuration list for PBXNativeTarget "ChromeChainConsole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
