@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33D9D3791E7FD065002239DC /* ChromeChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D9D3781E7FD065002239DC /* ChromeChain.h */; };
+		33D9D37B1E7FD065002239DC /* ChromeChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D9D37A1E7FD065002239DC /* ChromeChain.m */; };
+		33D9D3811E7FD09A002239DC /* libChromeChain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D9D3761E7FD065002239DC /* libChromeChain.a */; };
 		D5AF6874D5EA552B46C223B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AF687DB23078E4B59279EA /* main.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33D9D37F1E7FD095002239DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5AF60DB0CA4547E0400A7C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D9D3751E7FD065002239DC;
+			remoteInfo = ChromeChain;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D5AF6F29A9604A2416630DD4 /* CopyFiles */ = {
@@ -23,51 +36,102 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		33D9D3761E7FD065002239DC /* libChromeChain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libChromeChain.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D9D3781E7FD065002239DC /* ChromeChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChromeChain.h; sourceTree = "<group>"; };
+		33D9D37A1E7FD065002239DC /* ChromeChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromeChain.m; sourceTree = "<group>"; };
 		D5AF687DB23078E4B59279EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D5AF6A598DC26AD658D1628A /* ChromeChain */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChromeChain; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5AF6A598DC26AD658D1628A /* ChromeChainConsole */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChromeChainConsole; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D5AF68C0CCE4B4BDFD0C7ABB /* Frameworks */ = {
+		33D9D3731E7FD065002239DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5AF68C0CCE4B4BDFD0C7ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D9D3811E7FD09A002239DC /* libChromeChain.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D5AF6239C3527E8FF9D0B08B /* ChromeChain */ = {
+		33D9D3771E7FD065002239DC /* ChromeChain */ = {
+			isa = PBXGroup;
+			children = (
+				33D9D3781E7FD065002239DC /* ChromeChain.h */,
+				33D9D37A1E7FD065002239DC /* ChromeChain.m */,
+			);
+			path = ChromeChain;
+			sourceTree = "<group>";
+		};
+		D5AF6239C3527E8FF9D0B08B /* ChromeChainConsole */ = {
 			isa = PBXGroup;
 			children = (
 				D5AF687DB23078E4B59279EA /* main.m */,
 			);
-			path = ChromeChain;
+			name = ChromeChainConsole;
+			path = ChromeChain/ChromeChainConsole;
 			sourceTree = "<group>";
 		};
 		D5AF62EA4EF6792854193ED4 = {
 			isa = PBXGroup;
 			children = (
+				33D9D3771E7FD065002239DC /* ChromeChain */,
+				D5AF6239C3527E8FF9D0B08B /* ChromeChainConsole */,
 				D5AF6618A8321CB8154728A0 /* Products */,
-				D5AF6239C3527E8FF9D0B08B /* ChromeChain */,
 			);
 			sourceTree = "<group>";
 		};
 		D5AF6618A8321CB8154728A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5AF6A598DC26AD658D1628A /* ChromeChain */,
+				D5AF6A598DC26AD658D1628A /* ChromeChainConsole */,
+				33D9D3761E7FD065002239DC /* libChromeChain.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		33D9D3741E7FD065002239DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D9D3791E7FD065002239DC /* ChromeChain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		D5AF633F157D13E528ED122A /* ChromeChain */ = {
+		33D9D3751E7FD065002239DC /* ChromeChain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5AF606AC7AF66244AB81D78 /* Build configuration list for PBXNativeTarget "ChromeChain" */;
+			buildConfigurationList = 33D9D37C1E7FD065002239DC /* Build configuration list for PBXNativeTarget "ChromeChain" */;
+			buildPhases = (
+				33D9D3721E7FD065002239DC /* Sources */,
+				33D9D3731E7FD065002239DC /* Frameworks */,
+				33D9D3741E7FD065002239DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChromeChain;
+			productName = ChromeChain;
+			productReference = 33D9D3761E7FD065002239DC /* libChromeChain.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D5AF633F157D13E528ED122A /* ChromeChainConsole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5AF606AC7AF66244AB81D78 /* Build configuration list for PBXNativeTarget "ChromeChainConsole" */;
 			buildPhases = (
 				D5AF659FEC12D1E3F8207197 /* Sources */,
 				D5AF68C0CCE4B4BDFD0C7ABB /* Frameworks */,
@@ -76,10 +140,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				33D9D3801E7FD095002239DC /* PBXTargetDependency */,
 			);
-			name = ChromeChain;
+			name = ChromeChainConsole;
 			productName = ChromeChain;
-			productReference = D5AF6A598DC26AD658D1628A /* ChromeChain */;
+			productReference = D5AF6A598DC26AD658D1628A /* ChromeChainConsole */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -89,6 +154,13 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = terry1994;
+				TargetAttributes = {
+					33D9D3751E7FD065002239DC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AAQ453XLKM;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = D5AF69966A7D39D5951EA26A /* Build configuration list for PBXProject "ChromeChain" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -102,12 +174,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5AF633F157D13E528ED122A /* ChromeChain */,
+				D5AF633F157D13E528ED122A /* ChromeChainConsole */,
+				33D9D3751E7FD065002239DC /* ChromeChain */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		33D9D3721E7FD065002239DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D9D37B1E7FD065002239DC /* ChromeChain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5AF659FEC12D1E3F8207197 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -118,7 +199,33 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		33D9D3801E7FD095002239DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D9D3751E7FD065002239DC /* ChromeChain */;
+			targetProxy = 33D9D37F1E7FD095002239DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		33D9D37D1E7FD065002239DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AAQ453XLKM;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33D9D37E1E7FD065002239DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AAQ453XLKM;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D5AF61997A030E6CD1B2F351 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -223,13 +330,23 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D5AF606AC7AF66244AB81D78 /* Build configuration list for PBXNativeTarget "ChromeChain" */ = {
+		33D9D37C1E7FD065002239DC /* Build configuration list for PBXNativeTarget "ChromeChain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D9D37D1E7FD065002239DC /* Debug */,
+				33D9D37E1E7FD065002239DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5AF606AC7AF66244AB81D78 /* Build configuration list for PBXNativeTarget "ChromeChainConsole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5AF6745A4BEC7E35046E54B /* Debug */,
 				D5AF6B9A3AB6BB19EEA4A778 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5AF69966A7D39D5951EA26A /* Build configuration list for PBXProject "ChromeChain" */ = {
 			isa = XCConfigurationList;
