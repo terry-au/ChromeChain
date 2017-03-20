@@ -36,9 +36,10 @@ static NSString *const kPasswordValue = @"password_value";
         return NO;
     }
 
-    FMResultSet *resultSet = [_database executeQuery:@"SELECT * FROM ?", kTableName];
+    NSString *queryString = [NSString stringWithFormat:@"SELECT * FROM %@", kTableName];
+    FMResultSet *resultSet = [_database executeQuery:queryString];
     NSMutableArray *mutableLoginCredentials = [NSMutableArray array];
-    if (resultSet.next){
+    while (resultSet.next){
         NSString *actionURL = [resultSet stringForColumn:kActionURL];
         NSString *username = [resultSet stringForColumn:kUsernameValue];
         NSData *encPassword = [resultSet dataForColumn:kPasswordValue];

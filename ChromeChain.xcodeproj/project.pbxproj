@@ -31,6 +31,7 @@
 		333E303E1E7FF07B00C834CB /* LoginCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginCredential.m; sourceTree = "<group>"; };
 		333E303F1E7FF07B00C834CB /* LoginStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginStore.h; sourceTree = "<group>"; };
 		333E30401E7FF07B00C834CB /* LoginStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginStore.m; sourceTree = "<group>"; };
+		333E30471E7FF41400C834CB /* libChromeCrypto.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libChromeCrypto.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AB2EE598BD65E37EDB039F /* Pods-ChromeChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeChain.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeChain/Pods-ChromeChain.release.xcconfig"; sourceTree = "<group>"; };
 		664B0FCB1F1CBAE79ACD2A30 /* Pods-ChromeChainConsole.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChromeChainConsole.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChromeChainConsole/Pods-ChromeChainConsole.debug.xcconfig"; sourceTree = "<group>"; };
 		695FFB85A1509D77943E1FFF /* libPods-ChromeChain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChromeChain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		333E30441E7FF41400C834CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5AF68C0CCE4B4BDFD0C7ABB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,6 +61,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		333E30481E7FF41400C834CB /* ChromeCrypto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChromeCrypto;
+			sourceTree = "<group>";
+		};
 		84D1A5814773C04752A87664 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				D5AF6239C3527E8FF9D0B08B /* ChromeChainConsole */,
+				333E30481E7FF41400C834CB /* ChromeCrypto */,
 				D5AF6618A8321CB8154728A0 /* Products */,
 				E7F835AFBED83C30F30BDE25 /* Frameworks */,
 				84D1A5814773C04752A87664 /* Pods */,
@@ -91,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				D5AF6A598DC26AD658D1628A /* ChromeChainConsole */,
+				333E30471E7FF41400C834CB /* libChromeCrypto.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,7 +124,34 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		333E30451E7FF41400C834CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		333E30461E7FF41400C834CB /* ChromeCrypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333E304F1E7FF41400C834CB /* Build configuration list for PBXNativeTarget "ChromeCrypto" */;
+			buildPhases = (
+				333E30431E7FF41400C834CB /* Sources */,
+				333E30441E7FF41400C834CB /* Frameworks */,
+				333E30451E7FF41400C834CB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChromeCrypto;
+			productName = ChromeCrypto;
+			productReference = 333E30471E7FF41400C834CB /* libChromeCrypto.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		D5AF633F157D13E528ED122A /* ChromeChainConsole */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5AF606AC7AF66244AB81D78 /* Build configuration list for PBXNativeTarget "ChromeChainConsole" */;
@@ -134,6 +178,13 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = terry1994;
+				TargetAttributes = {
+					333E30461E7FF41400C834CB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AAQ453XLKM;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = D5AF69966A7D39D5951EA26A /* Build configuration list for PBXProject "ChromeChain" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -148,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				D5AF633F157D13E528ED122A /* ChromeChainConsole */,
+				333E30461E7FF41400C834CB /* ChromeCrypto */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +238,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		333E30431E7FF41400C834CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5AF659FEC12D1E3F8207197 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,6 +258,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		333E304D1E7FF41400C834CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AAQ453XLKM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		333E304E1E7FF41400C834CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AAQ453XLKM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D5AF61997A030E6CD1B2F351 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -310,6 +391,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		333E304F1E7FF41400C834CB /* Build configuration list for PBXNativeTarget "ChromeCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333E304D1E7FF41400C834CB /* Debug */,
+				333E304E1E7FF41400C834CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D5AF606AC7AF66244AB81D78 /* Build configuration list for PBXNativeTarget "ChromeChainConsole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

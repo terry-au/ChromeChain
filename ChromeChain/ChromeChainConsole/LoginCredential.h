@@ -8,9 +8,10 @@
 
 @interface LoginCredential : NSObject
 
-@property (nonatomic, retain) NSString *actionURL;
-@property (nonatomic, retain) NSString *username;
-@property (nonatomic, retain) NSData *encryptedPassword;
+@property (nonatomic, retain, readonly) NSString *actionURL;
+@property (nonatomic, retain, readonly) NSString *username;
+@property (nonatomic, retain, readonly) NSData *encryptedPassword;
+@property (nonatomic, retain, readonly) NSString *encryptedPasswordString;
 
 - (instancetype)initWithActionURL:(NSString *)actionURL username:(NSString *)username
                 encryptedPassword:(NSData *)encryptedPassword;

@@ -26,6 +26,10 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Unable to read data.");
         return -1;
     }
+
+    for (LoginCredential *credential in loginStore.credentials) {
+        NSLog(@"%@", credential.encryptedPasswordString);
+    }
     
     return 0;
 }

@@ -10,15 +10,16 @@
 @end
 
 @implementation LoginCredential {
-
 }
 - (instancetype)initWithActionURL:(NSString *)actionURL username:(NSString *)username
                 encryptedPassword:(NSData *)encryptedPassword {
     self = [super init];
     if (self) {
-        self.actionURL = actionURL;
-        self.username = username;
-        self.encryptedPassword = encryptedPassword;
+        _actionURL = actionURL;
+        _username = username;
+        _encryptedPassword = encryptedPassword;
+        _encryptedPasswordString = [[NSString alloc]
+                initWithData:encryptedPassword encoding:NSUTF16StringEncoding];
     }
 
     return self;
