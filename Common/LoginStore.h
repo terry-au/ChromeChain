@@ -8,8 +8,8 @@
 
 @interface LoginStore : NSObject
 
-@property (nonatomic, strong) NSString *path;
-@property (nonatomic, copy, readonly) NSArray<LoginCredential *> *credentials;
+@property(nonatomic, strong) NSString *path;
+@property(nonatomic, copy, readonly) NSArray<LoginCredential *> *credentials;
 
 - (instancetype)initWithPath:(NSString *)path;
 

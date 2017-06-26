@@ -1,5 +1,14 @@
-platform:osx, '10.9'
+platform :osx, '10.9'
+
+def shared_pods
+  pod 'FMDB'
+  pod 'UICKeyChainStore'
+end
+
+target 'Chromate' do
+  shared_pods
+end
 
 target 'ChromeChainConsole' do
-  pod 'FMDB'
+  shared_pods
 end
