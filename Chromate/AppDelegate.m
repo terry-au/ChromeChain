@@ -12,10 +12,19 @@
 
 @end
 
+static NSString *const kSafariSharedFrameworkPath = @"/System/Library/PrivateFrameworks/SafariShared.framework";
+static NSString *const kSafariSharedPath = @"/System/Library/PrivateFrameworks/Safari.framework";
+
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+
+    NSBundle *safariSharedBundle = [NSBundle bundleWithPath:kSafariSharedFrameworkPath];
+    NSLog(@"Load SafariShared: %@", [safariSharedBundle load] ? @"YES" : @"NO");
+
+    NSBundle *safariBundle = [NSBundle bundleWithPath:kSafariSharedPath];
+    NSLog(@"Load Safari: %@", [safariBundle load] ? @"YES" : @"NO");
 }
 
 

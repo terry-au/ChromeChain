@@ -24,7 +24,7 @@ int main(int argc, const char *argv[]) {
 
     NSString *testDatabasePath = [kTestFilesPath stringByAppendingPathComponent:@"login_data"];
 
-    LoginStore *loginStore = [LoginStore storeWithPath:testDatabasePath];
+    LoginStore *loginStore = [LoginStore storeWithURL:testDatabasePath];
     if (!loginStore.readData) {
         NSLog(@"Unable to read data.");
         return -1;

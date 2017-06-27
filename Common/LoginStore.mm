@@ -14,24 +14,71 @@ static NSString *const kPasswordValue = @"password_value";
 @implementation LoginStore {
     FMDatabase *_database;
     NSArray<LoginCredential *> *_loginCredentials;
+    NSURL *_stagingPath;
+    BOOL _hasStaged;
 }
 
-- (instancetype)initWithPath:(NSString *)path {
+- (instancetype)initWithURL:(NSURL *)path {
     self = [super init];
     if (self) {
         self.path = path;
-        _database = [FMDatabase databaseWithPath:path];
+        self.useStagingDirectory = YES;
     }
 
     return self;
 }
 
-+ (instancetype)storeWithPath:(NSString *)path {
-    return [[self alloc] initWithPath:path];
++ (instancetype)storeWithURL:(NSURL *)path {
+    return [[self alloc] initWithURL:path];
 }
 
+- (void)dealloc {
+    [self tryCleanStagedDatabase];
+}
+
+- (BOOL)tryCleanStagedDatabase {
+    NSLog(@"Attempting cleanup.");
+    if (_hasStaged && [self.path isEqual:_stagingPath]) {
+        // Delete the file, only now, we know it is not the user's original file.
+        NSLog(@"Deleted old, staged file.");
+    }
+    return YES;
+}
+
+//- (BOOL)stageDatabase {
+//    if (!self.useStagingDirectory) {
+//        _stagingPath = self.path;
+//        return YES;
+//    }
+//
+//    [self tryCleanStagedDatabase];
+//
+//    NSFileManager *defaultManager = [NSFileManager defaultManager];
+//    BOOL isDirectory = NO;
+//    if (![defaultManager fileExistsAtPath:self.path.path isDirectory:&isDirectory] || isDirectory) {
+//        NSLog(@"Input file does not exist.");
+//        return NO;
+//    }
+//
+//    NSError *error = nil;
+//    NSURL *stagingPath = [NSURL fileURLWithPath:@"chromate_staging.sqlite" relativeToURL:defaultManager.temporaryDirectory];
+//    [defaultManager copyItemAtURL:self.path toURL:stagingPath error:&error];
+//    _stagingPath = stagingPath;
+//    NSLog(@"Staged to: %@", stagingPath.path);
+//
+//    return error == nil;
+//
+//}
+
 - (BOOL)readData {
+//    if (![self stageDatabase]) {
+//        NSLog(@"Stage fail.");
+//        return NO;
+//    }
+    _database = [FMDatabase databaseWithURL:self.path];
+
     if (!_database.open) {
+        NSLog(@"Open fail.");
         return NO;
     }
 

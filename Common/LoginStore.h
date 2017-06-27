@@ -8,13 +8,14 @@
 
 @interface LoginStore : NSObject
 
-@property(nonatomic, strong) NSString *path;
+@property(nonatomic, strong) NSURL *path;
 @property(nonatomic, copy, readonly) NSArray<LoginCredential *> *credentials;
+@property(nonatomic) BOOL useStagingDirectory;
 
-- (instancetype)initWithPath:(NSString *)path;
+- (instancetype)initWithURL:(NSURL *)path;
 
 - (BOOL)readData;
 
-+ (instancetype)storeWithPath:(NSString *)path;
++ (instancetype)storeWithURL:(NSURL *)path;
 
 @end
